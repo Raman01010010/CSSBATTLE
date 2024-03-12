@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback Form</title>
     <style>
+        .main{
+            display: flex;flex-direction: column;
+            width: 100%;
+            border-radius: 10px;
+            max-width: 1000px; 
+            margin: 0 auto;
+            background-color: rgb(2, 2, 68);
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -17,24 +25,23 @@
         .container {
             color: #ffffff;
             display: flex;
-            flex-direction: row;
-            width: 100%;
-            border-radius: 10px;
-            max-width: 1000px; 
-            margin: 0 auto;
-            background-color: rgb(2, 2, 68);
+          
+           
+         
         }
         .feedback-form {
             flex: 1;
-            padding: 20px;
-           
+            padding-right: 14vw;
+            padding-left: 5vw;
+           ;
           
            
           
         }
         .contact-info {
-            flex: 1;
+         
             padding: 20px;
+            justify-content: end;
            
            
             
@@ -79,13 +86,32 @@
             font-weight: bold;
             color: #8d0a7e;
         }
+        .item{
+            margin: 10px;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 50px;
+        }
     </style>
 </head>
 <body>
+    <div class="main">
+    <div style="display: flex;justify-content:center; ">
+        <div class="item">HOME</div>
+        <div class="item">BLOG</div>
+        <div class="item">ABOUT</div>
+     
+        <div class="item" style="color:#8d0a7e">CONTACT</div>
+    </div>
     <div class="container">
+       
+       
+       
+        <br>
         <div class="feedback-form">
             <div style="margin-bottom: 5px;" class="head">Feedback Form</div>
-            <div style="margin: 10px;">Just let us know more about you</div>
+            <div style="margin-bottom: 10px;">Just let us know more about you</div>
             <form id="feedbackForm">
                 <div class="form-group">
                   
@@ -119,6 +145,7 @@
         </div>
     </div>
 
-  
+
+</div>
 </body>
 </html>

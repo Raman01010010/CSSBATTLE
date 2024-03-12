@@ -1,74 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback Form</title>
     <style>
-        .main{
-            display: flex;flex-direction: column;
+        .main {
+            display: flex;
+            flex-direction: column;
             width: 100%;
             border-radius: 30px;
-            max-width: 1000px; 
+            max-width: 1000px;
             margin: 0 auto;
             background-color: rgb(2, 2, 68);
         }
+
         body {
             background-image: url('https://cdn.pixabay.com/photo/2020/04/30/20/14/sky-5114501_1280.jpg');
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            
+
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
         }
+
         .container {
             color: #ffffff;
             display: flex;
-          
-           
-         
+
+
+
         }
+
         .feedback-form {
             flex: 1;
             padding-right: 14vw;
             padding-left: 5vw;
-           ;
-          
-           
-          
+            ;
+
+
+
         }
+
         .contact-info {
-         
+
             padding: 20px;
-            width:23vw;
+            width: 23vw;
             justify-content: end;
-           
-           
-            
-          
-          
+
+
+
+
+
         }
+
         .form-group {
             display: flex;
             margin-bottom: 20px;
         }
+
         .form-group label {
             display: block;
             margin-bottom: 5px;
         }
-        .form-group input, .form-group textarea {
+
+        .form-group input,
+        .form-group textarea {
             width: 100%;
             padding: 8px;
             border: 1px solid #ccc;
             border-radius: 5px;
             resize: none;
         }
+
         .form-group textarea {
             height: 100px;
         }
+
         .form-group button {
             padding: 10px 20px;
             background-color: #007bff;
@@ -77,90 +92,104 @@
             border-radius: 5px;
             cursor: pointer;
         }
-        .tb{
+
+        .tb {
             margin: 3px;
             opacity: 0.3;
             background-color: #ffffff;
             font-size: 15px;
             color: #ffffff;
         }
-        .head{
+
+        .head {
+            font-family: anton;
             font-size: 1.7em;
-            font-weight: bold;
+
             color: #8d0a7e;
         }
-        .item{
+
+        .item {
+            font-family: ANTON;
             margin: 30px;
             color: #ffffff;
             font-size: 20px;
-            font-weight: bold;
+
             margin: 50px;
         }
     </style>
 </head>
-<body >
+
+<body>
     <div class="main">
-    <div style="display: flex;justify-content:center; ">
-        <div class="item">HOME</div>
-        <div class="item">BLOG</div>
-        <div class="item">ABOUT</div>
-     
-        <div class="item" style="color:#8d0a7e">CONTACT</div>
-    </div>
-    <div class="container">
-       
-       
-       
-        <br>
-        <div class="feedback-form">
-            <div style="margin-bottom: 5px;" class="head">Feedback Form</div>
-            <div style="margin-bottom: 10px;">Just let us know more about you</div>
-            <form id="feedbackForm">
-                <div class="form-group">
-                  
-                   
-                    <input class="tb" type="text" id="name" name="name" placeholder="FIRST NAME" required>
-                  
-                    <input class="tb" type="text" id="name" name="name" placeholder="LAST NAME" required>
-                </div>
-                <div class="form-group">
-                   
-                    <input class="tb" placeholder="MAIL" type="email" id="email" name="email" required>
-                   
-                    <input class="tb" placeholder="CONTACT" type="email" id="email" name="email" required>
-            
-                </div>
-                <div class="form-group">
-                  
-                    <textarea placeholder="MESSAGE" class="tb" id="message" name="message" required></textarea>
-                </div>
-                <div class="form-group">
-                    <button style="background-color: #8d0a7e;" type="submit">SUBMIT</button>
-                </div>
-            </form>
+        <div style="display: flex;justify-content:center; ">
+            <div class="item">HOME</div>
+            <div class="item">BLOG</div>
+            <div class="item">ABOUT</div>
+
+            <div class="item" style="color:#8d0a7e">CONTACT</div>
         </div>
-
-        <div class="contact-info">
-            <div class="head">CONTACT INFORMATION</div>
-            
+        <div class="container">
 
 
-            <p>CSED. MNNIT ALLAHABAD</p>
-            <p>PRAYAGRAJ - 211004</p>
-            <p style="margin-top: 10px;">CALL US: +91-4794685713</p>
-            <div class="head">FOLLOW US</div>
-            <div style="display: flex;justify-content: start;">
-                <div style="margin-right: 15px;">
-                <img style="height:3vw" src="https://cdn.pixabay.com/photo/2017/10/04/11/58/facebook-2815970_1280.jpg"></div>
-                <div style="margin-right: 15px;">
-                    <img style="height:3vw" src="https://cdn.pixabay.com/photo/2017/10/04/11/58/facebook-2815970_1280.jpg"></div>
-                    <div style="margin-right: 15px;">
-                        <img style="height:3vw" src="https://cdn.pixabay.com/photo/2017/10/04/11/58/facebook-2815970_1280.jpg"></div>
+
+            <br>
+            <div class="feedback-form">
+                <div style="margin-bottom: 5px;" class="head">JUST SAY HELLO</div>
+                <div style="margin-bottom: 10px;">Just let us know more about you</div>
+                <form id="feedbackForm">
+                    <div class="form-group">
+
+
+                        <input class="tb" type="text" id="name" name="name" placeholder="FIRST NAME" required>
+
+                        <input class="tb" type="text" id="name" name="name" placeholder="LAST NAME" required>
+                    </div>
+                    <div class="form-group">
+
+                        <input class="tb" placeholder="MAIL" type="email" id="email" name="email" required>
+
+                        <input class="tb" placeholder="CONTACT" type="email" id="email" name="email" required>
+
+                    </div>
+                    <div class="form-group">
+
+                        <textarea placeholder="MESSAGE" class="tb" id="message" name="message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button style="background-color: #8d0a7e;" type="submit">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <div class="head">CONTACT INFORMATION</div>
+
+
+
+                <p>CSED. MNNIT ALLAHABAD</p>
+                <p>PRAYAGRAJ - 211004</p>
+                <p style="margin-top: 10px;">CALL US: +91-4794685713</p>
+                <div class="head">FOLLOW US</div>
+                <div style="display: flex;justify-content: start;">
+                    
+                    <div style="margin-right: 1vw;">
+                        <img style="height:3vw"
+                            src="https://cdn.pixabay.com/photo/2017/10/04/11/58/facebook-2815970_1280.jpg">
+                    </div>
+                    <div style="margin-right: 1vw;">
+                        <img style="height:3vw"
+                            src=https://img.freepik.com/free-vector/instagram-vector-social-media-icon-7-june-2021-bangkok-thailand_53876-136728.jpg?size=626&ext=jpg&ga=GA1.1.1814819478.1708281670&semt=ais">
+                    </div>
+                    <div style="margin-right: 1vw;">
+                        <img style="height:3vw"
+                            src="https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049587.jpg?t=st=1710266781~exp=1710270381~hmac=cbd5a417580b9c419fefffa030cdd8baae65dd6f341b65d3acfe9764ac9cb548&w=740">
+                    </div>
+                </div>
             </div>
         </div>
+
+
     </div>
-
-
-</div>
 </body>
+
 </html>
